@@ -11,7 +11,7 @@ os.chdir(folder_path)
 
 settings_path = os.path.join(folder_path, "settings.txt")
 
-exclude = ('organize_folder.exe', 'organize_folder.py', 'settings.txt', 'history.log')
+exclude = ('organize_file.exe', 'organize_file.py', 'settings.txt', 'history.log')
 files = [file for file in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, file)) and file not in exclude]
 
 revert_files = False
